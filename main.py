@@ -1,9 +1,9 @@
-import get_started
+import travelling_sales_man
 from ortools.init import pywrapinit
 
 
 def main():
-    get_started.example()
+    travelling_sales_man.TSP_solver()
 
 
 if __name__ == "__main__":

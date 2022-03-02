@@ -1,5 +1,11 @@
 from ortools.linear_solver import pywraplp
-from ortools.init import pywrapinit
+
+""" 
+Maximize 3x + y subject to the following constraints:
+0	≤	x	≤	1
+0	≤	y	≤	2
+x + y	≤	2 
+"""
 
 
 def example():
