@@ -1,9 +1,9 @@
-import circuit_board
+import vrp.vehicle_routing_problem as vrp
 from ortools.init import pywrapinit
 
 
 def main():
-    circuit_board.CB_solver()
+    vrp.VRP_solvers()
 
 
 if __name__ == "__main__":
