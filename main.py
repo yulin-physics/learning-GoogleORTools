@@ -1,9 +1,9 @@
-import travelling_sales_man
+import circuit_board
 from ortools.init import pywrapinit
 
 
 def main():
-    travelling_sales_man.TSP_solver()
+    circuit_board.CB_solver()
 
 
 if __name__ == "__main__":
