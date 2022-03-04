@@ -13,9 +13,9 @@
 
 4. Set cost of travel
 
-5. **If VRP**: create <a href="https://developers.google.com/optimization/routing/dimensions">dimensions</a> to track each vehicles's cumulative quantity along its route
+5. **If VRP**: Create <a href="https://developers.google.com/optimization/routing/dimensions">dimensions</a> to track each vehicles's cumulative quantity along its route
 
-6. Set first solution heuristic (choose from `routing_enums_pb2.FirstSolutionStrategy`)
+6. Set first solution heuristic (choose from `routing_enums_pb2.FirstSolutionStrategy`); Or parse initial_routes in step 1
 
 7. **Optional**: Set metaheuristic (choose from `routing_enums_pb2.LocalSearchMetaheuristic`)
 

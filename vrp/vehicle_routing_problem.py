@@ -2,7 +2,7 @@ from ortools.constraint_solver import pywrapcp
 from ortools.constraint_solver import routing_enums_pb2
 
 
-def VRP_solvers():
+def VRP_solver():
     data = create_data_model()
     manager = pywrapcp.RoutingIndexManager(
         len(data["distance_matrix"]), data["num_vehicles"], data["depot"]
@@ -26,10 +26,14 @@ def VRP_solvers():
     # Large coefficient for global span to minimise length of longest route
     distance_dimension.SetGlobalSpanCostCoefficient(100)
 
+    initial_solution = routing.ReadAssignmentFromRoutes(data["initial_routes"], True)
+    print("Initial solution: ")
+    print_solution(data, manager, routing, initial_solution)
+
     search_parameters = pywrapcp.DefaultRoutingSearchParameters()
-    search_parameters.first_solution_strategy = (
-        routing_enums_pb2.FirstSolutionStrategy.PATH_CHEAPEST_ARC
-    )
+    # search_parameters.first_solution_strategy = (
+    #     routing_enums_pb2.FirstSolutionStrategy.PATH_CHEAPEST_ARC
+    # )
     # search_parameters.local_search_metaheuristic = (
     #     routing_enums_pb2.LocalSearchMetaheuristic.GUIDED_LOCAL_SEARCH
     # )
@@ -38,6 +42,7 @@ def VRP_solvers():
     solution = routing.SolveWithParameters(search_parameters)
 
     if solution:
+        print("Solution after search: ")
         print_solution(data, manager, routing, solution)
     else:
         print("No solution found!")
@@ -64,12 +69,19 @@ def print_solution(data, manager, routing, solution):
         max_route_distance = max(route_distance, max_route_distance)
         total_distance += route_distance
     print("Maximum of the route distances: {}m".format(max_route_distance))
-    print("Total Distance of all routes: {}m".format(total_distance))
+    print("Total Distance of all routes: {}m\n".format(total_distance))
 
 
 def create_data_model():
     """Stores the data for the problem."""
     data = {}
+    # The initial routes do not include the depot.
+    data["initial_routes"] = [
+        [8, 16, 14, 13, 12, 11],
+        [3, 4, 9, 10],
+        [15, 1],
+        [7, 5, 2, 6],
+    ]
     # computed with Manhattan distane definition from location coordinates
     data["distance_matrix"] = [
         [

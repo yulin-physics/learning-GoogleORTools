@@ -1,9 +1,9 @@
-import vrp.vehicle_routing_problem as vrp
+from vrp import vehicle_routing_problem as vrp
 from ortools.init import pywrapinit
 
 
 def main():
-    vrp.VRP_solvers()
+    vrp.VRP_solver()
 
 
 if __name__ == "__main__":
