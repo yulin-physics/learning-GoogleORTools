@@ -4,11 +4,11 @@
 
 [Rust VRP Solver](#rust-vrp-solver)
 
-# Google OR-Tools
+# [Google OR-Tools](ortools)
 
 <a href="https://developers.google.com/optimization/introduction/python">Get Started with OR-Tools for Python</a>
 
-## Steps for [TSP](./ortools_tsp) & [VRP](./ortools_vrp)
+## Steps for TSP& VRP
 
 1. Create the data
 
@@ -52,7 +52,7 @@ search_parameters.log_search = True
 
 <a href="https://developers.google.com/optimization/routing/routing_options#local_search_options"> Local Search Options </a>
 
-# Rust VRP Solver
+# [Rust VRP Solver](rust_vrp)
 
 <a href="https://reinterpretcat.github.io/vrp/getting-started/index.html"> A Vehicle Routing Problem Solver Documentation </a>
 
