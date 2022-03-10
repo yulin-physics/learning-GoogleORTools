@@ -1,0 +1,166 @@
+{
+  "plan": {
+    "jobs": [
+      {
+        "id": "job1",
+        "deliveries": [
+          {
+            "places": [
+              {
+                "location": {
+                  "lat": 52.52599,
+                  "lng": 13.45413
+                },
+                "duration": 300.0,
+                "times": [
+                  [
+                    "2020-07-04T08:00:00Z",
+                    "2020-07-04T12:00:00Z"
+                  ]
+                ]
+              }
+            ],
+            "demand": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "id": "job2",
+        "deliveries": [
+          {
+            "places": [
+              {
+                "location": {
+                  "lat": 52.5316,
+                  "lng": 13.3884
+                },
+                "duration": 180.0,
+                "times": [
+                  [
+                    "2020-07-04T08:00:00Z",
+                    "2020-07-04T16:00:00Z"
+                  ]
+                ]
+              }
+            ],
+            "demand": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "fleet": {
+    "vehicles": [
+      {
+        "typeId": "vehicle1",
+        "vehicleIds": [
+          "Car_1",
+          "Car_2",
+          "Car_3",
+          "Car_4",
+          "Car_5",
+          "Car_6",
+          "Car_7",
+          "Car_8",
+          "Car_9",
+          "Car_10"
+        ],
+        "profile": {
+          "matrix": "Car"
+        },
+        "costs": {
+          "fixed": 25.0,
+          "distance": 0.0002,
+          "time": 0.005
+        },
+        "shifts": [
+          {
+            "start": {
+              "earliest": "2020-07-04T08:00:00Z",
+              "location": {
+                "lat": 52.4664,
+                "lng": 13.4023
+              }
+            },
+            "end": {
+              "latest": "2020-07-04T20:00:00Z",
+              "location": {
+                "lat": 52.4664,
+                "lng": 13.4023
+              }
+            }
+          }
+        ],
+        "capacity": [
+          40
+        ]
+      },
+      {
+        "typeId": "vehicle2",
+        "vehicleIds": [
+          "Truck_1",
+          "Truck_2",
+          "Truck_3",
+          "Truck_4",
+          "Truck_5",
+          "Truck_6",
+          "Truck_7",
+          "Truck_8",
+          "Truck_9",
+          "Truck_10",
+          "Truck_11",
+          "Truck_12",
+          "Truck_13",
+          "Truck_14",
+          "Truck_15",
+          "Truck_16",
+          "Truck_17",
+          "Truck_18",
+          "Truck_19",
+          "Truck_20"
+        ],
+        "profile": {
+          "matrix": "Truck"
+        },
+        "costs": {
+          "fixed": 25.0,
+          "distance": 0.0002,
+          "time": 0.005
+        },
+        "shifts": [
+          {
+            "start": {
+              "earliest": "2020-07-04T08:00:00Z",
+              "location": {
+                "lat": 52.4959,
+                "lng": 13.3539
+              }
+            },
+            "end": {
+              "latest": "2020-07-04T20:00:00Z",
+              "location": {
+                "lat": 52.4959,
+                "lng": 13.3539
+              }
+            }
+          }
+        ],
+        "capacity": [
+          50
+        ]
+      }
+    ],
+    "profiles": [
+      {
+        "name": "Car"
+      },
+      {
+        "name": "Truck"
+      }
+    ]
+  }
+}
