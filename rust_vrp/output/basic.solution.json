@@ -1,0 +1,117 @@
+{
+  "statistic": {
+    "cost": 39.0754,
+    "distance": 16677,
+    "duration": 2148,
+    "times": {
+      "driving": 1668,
+      "serving": 480,
+      "waiting": 0,
+      "break": 0,
+      "commuting": 0,
+      "parking": 0
+    }
+  },
+  "tours": [
+    {
+      "vehicleId": "Truck_11",
+      "typeId": "vehicle2",
+      "shiftIndex": 0,
+      "stops": [
+        {
+          "location": {
+            "lat": 52.4959,
+            "lng": 13.3539
+          },
+          "time": {
+            "arrival": "2020-07-04T08:00:00Z",
+            "departure": "2020-07-04T08:00:00Z"
+          },
+          "distance": 0,
+          "load": [
+            4
+          ],
+          "activities": [
+            {
+              "jobId": "departure",
+              "type": "departure"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.52599,
+            "lng": 13.45413
+          },
+          "time": {
+            "arrival": "2020-07-04T08:12:37Z",
+            "departure": "2020-07-04T08:17:37Z"
+          },
+          "distance": 7572,
+          "load": [
+            3
+          ],
+          "activities": [
+            {
+              "jobId": "job1",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.5316,
+            "lng": 13.3884
+          },
+          "time": {
+            "arrival": "2020-07-04T08:25:07Z",
+            "departure": "2020-07-04T08:28:07Z"
+          },
+          "distance": 12067,
+          "load": [
+            0
+          ],
+          "activities": [
+            {
+              "jobId": "job2",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.4959,
+            "lng": 13.3539
+          },
+          "time": {
+            "arrival": "2020-07-04T08:35:48Z",
+            "departure": "2020-07-04T08:35:48Z"
+          },
+          "distance": 16677,
+          "load": [
+            0
+          ],
+          "activities": [
+            {
+              "jobId": "arrival",
+              "type": "arrival"
+            }
+          ]
+        }
+      ],
+      "statistic": {
+        "cost": 39.0754,
+        "distance": 16677,
+        "duration": 2148,
+        "times": {
+          "driving": 1668,
+          "serving": 480,
+          "waiting": 0,
+          "break": 0,
+          "commuting": 0,
+          "parking": 0
+        }
+      }
+    }
+  ]
+}

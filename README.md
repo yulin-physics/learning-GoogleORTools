@@ -4,11 +4,11 @@
 
 [Rust VRP Solver](#rust-vrp-solver)
 
-# [Google OR-Tools](ortools)
+## [Google OR-Tools](ortools)
 
 <a href="https://developers.google.com/optimization/introduction/python">Get Started with OR-Tools for Python</a>
 
-## Steps for TSP& VRP
+### Steps for TSP& VRP
 
 1. Create the data
 
@@ -31,7 +31,7 @@
 
 8. Solve and print solution
 
-## Metaheuristic Options
+### Metaheuristic Options
 
 Change strategy for a large data set where first solution strategy doesn't yield a good solution.
 
@@ -52,7 +52,7 @@ search_parameters.log_search = True
 
 <a href="https://developers.google.com/optimization/routing/routing_options#local_search_options"> Local Search Options </a>
 
-# [Rust VRP Solver](rust_vrp)
+## [Rust VRP Solver](rust_vrp)
 
 <a href="https://reinterpretcat.github.io/vrp/getting-started/index.html"> A Vehicle Routing Problem Solver Documentation </a>
 
@@ -91,3 +91,5 @@ Use CLI:
    - `--max-time`, duration of run
    - `--max-generations`, number of steps before termination
    - `--min-cv`, coefficient of variation for objectives
+
+view visualisation of solution `geojson` at <a href="https://geojson.io/">geojson.io</a>
