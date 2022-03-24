@@ -1,3 +1,3 @@
 solve:
 	cd rust_vrp; \
-	cargo run input
+	cargo run --bin pragmatic input 
